@@ -1,0 +1,19 @@
+//Display or hide Footer contact form tab
+$(document).ready(function(){
+    $(".footer-contact-form-btn").click(function(){
+        if($(".default-btn-pos").hasClass("default-btn-pos-show")){
+            $(".default-btn-pos").removeClass("default-btn-pos-show");
+            $(".default-btn-pos").addClass("default-btn-pos-hide");
+        }else{
+            $(".default-btn-pos").addClass("default-btn-pos-show");
+            $(".default-btn-pos").removeClass("default-btn-pos-hide");
+        }
+        if($(".footer-contact-form").hasClass("footer-contact-form-hide")){
+            $(".footer-contact-form").removeClass("footer-contact-form-hide");
+            $(".footer-contact-form").addClass("footer-contact-form-show");
+        }else{
+            $(".footer-contact-form").addClass("footer-contact-form-hide");
+            $(".footer-contact-form").removeClass("footer-contact-form-show");
+        }
+    });
+});

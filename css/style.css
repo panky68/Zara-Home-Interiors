@@ -1,0 +1,597 @@
+@font-face{
+    src: url(fonts/Lobster-Regular.tff);
+    font-family: Lobster;
+}
+body{
+    padding-top: 70px;;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* NAVBAR */
+/*custom colors for navbar*/
+.website-info{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.navbar-custom {
+    background-color: #1b3545;
+}
+.navbar-nav .active{
+    background-color: #080e13;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ba994a;
+    padding: 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+/* change the link color */
+.nav-item, .dropdown-nav-link{
+    color: #ba994a;
+}
+.dropdown-nav-link{
+    margin-top: 2rem;
+}
+.nav-item-underline::after{
+    content: "";
+    width: 0;
+    height: .05rem;
+    background-color: #ba994a;
+    display: block;
+    margin: auto;
+    transition: width .3s cubic-bezier(.55, 0, .98, .54);
+}
+.nav-item-underline:hover::after{
+    width: 100%;
+    background-color: #f7b00b;
+}
+/* change the color of active or hovered links */
+.nav-link:hover{
+    color: #f7b00b;
+}
+.dropdown-menu{
+    background-color: #1b3545;
+    margin: 0;
+}
+.dropdown-item{
+    color: #ba994a;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.dropdown-item:hover{
+    color: #f7b00b;
+    background-color: #1b3545;
+}
+.dropdown-img{
+    border: 2px solid #ba994a;
+    width: 100%;
+    height: 85%;
+    padding: 3px;
+    margin-top: 1rem;
+}
+/* Hamburger Icon */
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #ba994a;
+    border:none;
+    outline: none !important;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #1b3545;
+    margin-bottom: 5px;
+}
+/* END OF MENU */
+.pg_hdr{
+    color: #1b3545;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.card-title{
+    font-family: Geometric415, Futura;
+}
+/* General Styles*/
+.card{
+    box-shadow: 10px 10px 10px grey;
+}
+.image-wrapper{
+    overflow: hidden;
+}
+.card-img-top{
+    /* backface-visibility: hidden; */
+    transition: all .5s;
+}
+.card-img-top:hover{
+    overflow: hidden;
+    transform: scale(1.15);
+}
+.card-body{
+    background-color: #1b3545;
+}
+.card-title{
+    text-align: center;
+    color: #ba994a;
+    text-transform: uppercase;
+}
+.card-text{
+    color: #ba994a;
+    font-size: 13px;
+}
+.input-error{
+    border-color: red;
+}
+/*End of General Styles*/
+
+#content{
+    margin-top: 1.3rem;
+}
+
+/* SlideShow */
+.carousel-caption h3, .carousel-caption p {
+    color: #1b3545;
+    font-weight: 700;
+}
+.carousel-caption h3{
+    font-size: 4rem;
+}
+.carousel-caption p{
+    font-size: 2rem;
+}
+.slideshow-img{
+    height: 700px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #1b3545;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    border: 2px solid #ba994a;
+    width: 15px;
+    height: 15px;
+    background-color: #1b3545;
+}
+/* End of Slideshow */
+
+#design, #supply, #installations, #gallery, #customers{
+    margin-top: 2rem;
+}
+
+
+/* Middle Section */
+.design-container, .supply-container, .installations-container{
+    border: .2rem solid #1b3545;
+}
+.design-content-wrapper, .supply-content-wrapper, .installations-content-wrapper{
+    display: flex;
+    background-color: #1b3545;
+}
+.supply-content-wrapper{
+    background-color: white;
+}
+.design-text-container, .installations-text-container, .supply-text-container{
+    flex: 0 1 50%;
+    background-color: #1b3545;
+    color: #ba994a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all .5s;
+}
+.supply-text-container{
+    background-color: white;
+    color: #1b3545;
+    transition: color .5s;
+}
+.design-text-container:hover, .installations-text-container:hover{
+    background-color: white;
+    color: #1b3545;
+}
+.supply-text-container:hover{
+    background-color: #1b3545;
+    color: #ba994a;
+}
+.large-underline{
+    width: 20rem;
+    height: .1rem;
+    background-color: #ba994a;
+    transition: background-color .5s;
+}
+.small-underline{
+    width: 9rem;
+    height: .1rem;
+    margin: .5rem auto 0 auto;
+    background-color: #ba994a;
+    transition: background-color .5s;
+}
+.design-text-container:hover .small-underline, .design-text-container:hover .large-underline{
+    background-color: #1b3545;
+}
+.design-img, .supply-img, .installations-img{
+    flex: 1 1;
+    width: 100%;
+}
+
+.phase-btns{
+    border: 1px solid #ba994a; 
+    background-color: #1b3545;
+    color: #ba994a;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.phase-btns:hover{
+    border: 1px solid #f7b00b; 
+    background-color: #080e13;
+    color: #f7b00b;
+}
+/* End of Middle Section */
+
+/* Gallery */
+.gallery-container{
+    padding: 1.6rem 0;
+    background-color: #1b3545;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(10rem, 1fr));
+    grid-template-rows: repeat(2, 15vw);
+    grid-gap: 1.6rem;
+}
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+    transition: opacity .5s;
+}
+.gallery-img:hover{
+    opacity: 1;
+}
+.gallery-img-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+/* End of Gallery */
+
+/* Customers */
+#customers{
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    background-color: #151e25;
+    color: #1b3545;
+    color: white;
+}
+.customers-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.customers-header{
+    text-align: center;
+}
+.customer-underline{
+    padding-top: 2rem;
+}
+.customer-large-underline{
+    width: 30rem;
+    height: .1rem;
+    background-color: #ba994a;
+    margin: 0 auto;
+}
+.customer-small-underline{
+    width: 19rem;
+    height: .1rem;
+    margin: .5rem auto 0 auto;
+    background-color: #ba994a;
+}
+.customers-text{
+    margin: 2rem auto 8rem auto;
+    width: 50%;
+}
+.customer-card-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.customer-card{
+    background-color: #eee;
+    width: 40rem;
+    color: #000;
+    display: flex;
+}
+.customer-img-wrapper{
+    margin: auto 0;
+}
+.customer-img{
+    width: 16rem;
+    margin-left: -1.3rem;
+}
+.customer-info{
+    padding: 0 2rem;
+}
+.customer-name{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.customer-para1{
+    font-size: 1rem;
+    font-style: italic;
+    color: #1b3545;
+    margin-bottom: .5rem;
+}
+.customer-para2{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* End of Customers */
+
+/* Fitted Bedroom Page*/
+.fitted_bedrm_card{
+    margin: 1rem auto;
+}
+/* End of Fitted Bedroom Page*/
+
+/* Multiple-Item Slider */
+.parent-box{
+    background-color: rgb(228, 227, 227);
+    display: flex;
+}
+.box{
+    height: 200px;
+    background-color: orange;
+    margin: 10px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    outline: none;
+    position: absolute;
+    top: 40%;
+    /* transform: translateY(50%); */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+}
+.owl-carousel .owl-nav button.owl-next{
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    outline: none;
+    position: absolute;
+    top: 40%;
+    right:0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    
+}
+/* End of Multiple-Item Slider */
+
+/* Services Page */
+.service-row{
+    margin-bottom: 2rem;
+}
+.serv-img{
+    width: 100%;
+}
+/* End of Services Page */
+
+/* Footer */
+#footer{
+    background-color: #1b3545;
+    color: #ba994a;
+    position: relative;
+}
+.footer-header{
+    margin: 1rem auto;
+    text-align: left;
+    color: #f7b00b;
+    text-decoration: underline;
+}
+.footer-lists{
+    list-style: none;
+}
+.footer-link{
+    text-decoration: none !important;
+    color: #ba994a;
+}
+.footer-link:hover{
+    color: #f7b00b;
+}
+.footer-address{
+    padding: 0;
+    margin: 0;
+}
+.footer-map{
+    border: 2px solid #ba994a;
+    width: 100%;
+    height: 80%;
+    padding: 3px;
+}
+.copyright-section{
+    margin-top: 2rem;
+}
+.copyright{
+    text-align: center;
+    font-size: 12px;
+}
+.contact-tab{
+    position: fixed;
+    bottom: 0;
+    right: 1rem;
+    z-index: 100;
+    display: inline-block;
+}
+.footer-contact-form-btn{
+    z-index: 10;
+    color: #1b3545;
+    background-color: #ba994a;
+    text-align: center;
+    cursor: pointer;
+    width: 10rem;
+    border-radius: 3px;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.footer-contact-form .footer-contact-form-btn{
+    display: block;
+    width: auto;
+}
+/* Display 'Contact Us' Button Position */
+.default-btn-pos-show{
+    position: relative;
+    animation: def-btn-pos; /* animation name*/
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+/* Hide the 'Contact Us' Button */
+.default-btn-pos-hide{
+    display: none;
+}
+.footer-contact-form {
+    border-radius: 3px;
+    width: 20rem;
+}
+/* Footer Form Hidden as default */
+.footer-contact-form-hide{
+    position: relative;
+    animation: hide-form;
+    animation-delay: 0;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    display: none;
+}
+/* Show Form when 'Contact Us' is clicked */
+ .footer-contact-form-show{
+    color: #000;
+    position: relative;
+    bottom: 0;
+    cursor: none;
+    background-color: #fff;
+    animation: show-form;
+    animation-delay: 0;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+/* Animations for the Contact Us button and Form */
+@keyframes def-btn-pos{ /* display Contact Us button */
+    from{
+        bottom: -5rem;  /* move from  */
+    }
+    to{
+        bottom: 0;  /* move to  */
+    }
+}
+@keyframes show-form{   /* display Contact Us button and form */
+    from{
+        bottom: -500px; /* move from  */
+    }
+    to{
+        bottom: 0px;     /* move to  */
+    }   
+}
+@keyframes hide-form{   /* hide Contact Us button and form */
+    from{
+        bottom: 0;  /* move from  */
+    }
+    to{
+        bottom: -500px;  /* move to  */
+    }
+}
+.main-form{
+    padding-bottom: 1rem;
+}
+.main-form .form-group{
+    margin: 10px 10px 16px 10px;
+}
+.main-form button{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    height: 2rem;
+    border: none;
+    outline: none !important;
+    background-color: #ba994a;
+    color: #1b3545;
+    transition: all .5s;
+}
+.main-form button:hover{
+    background-color: #1b3545;
+    color: #ba994a;
+}
+/* END OF FOOTER */
+
+
+/* Responsiveness */
+@media (max-width: 1700px){
+    #customers{
+        padding-bottom: 4rem;
+    }
+    .customers-text{
+        margin-bottom: 4rem;
+    }
+    .customer-card-wrapper{
+        display: block;
+        margin: 1rem auto;
+    }
+    .customer-card{
+        margin: 1rem auto;
+    }
+}
+/* End of Responsiveness */
+
+
+/* Contact Us Page */
+/* **************** */
+.contact-us-form{
+    padding: .5rem 10rem 7rem 1rem;
+}
+.contact-us-form-btn{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 2px;
+    margin: 0 auto;
+    background-color: #ba994a;
+    color: #1b3545;
+    width: 10rem;
+    text-align: center;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: all .5s;
+}
+.contact-us-form-btn:hover{
+    background-color: #1b3545;
+    color: #ba994a;
+}
+.map-wrapper{
+    margin-top: 3rem;
+}
+.contact-us-map{
+    border: 2px solid #ba994a;
+    width: 100%;
+    /* height: 80%; */
+    padding: 3px;
+}
+.address-wrapper{
+    padding: 3rem 0 5rem 0;
+}
+/* End of Contact Us Page */
